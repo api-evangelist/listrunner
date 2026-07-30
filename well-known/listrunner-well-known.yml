@@ -1,0 +1,44 @@
+generated: '2026-07-19'
+method: probed
+source: live probes of the Listrunner brand hosts
+host: https://listrunnerapp.com
+result: none
+note: >-
+  No .well-known documents are published. Every path probed returns HTTP 200 only because
+  listrunnerapp.com issues a 307 to commure.com and the request resolves to the Commure
+  marketing homepage (HTML), not to a discovery document. This is a soft-404 redirect, so
+  no WellKnown, SecurityTxt, or APICatalog pointer is wired in apis.yml. Recorded so
+  re-runs of the enrichment pipeline do not re-probe a dead surface.
+documents:
+- path: /.well-known/security.txt
+  status: 307
+  resolves_to: https://www.commure.com/
+  document: false
+- path: /.well-known/openid-configuration
+  status: 307
+  resolves_to: https://www.commure.com/
+  document: false
+- path: /.well-known/oauth-authorization-server
+  status: 307
+  resolves_to: https://www.commure.com/
+  document: false
+- path: /.well-known/api-catalog
+  status: 307
+  resolves_to: https://www.commure.com/
+  document: false
+- path: /.well-known/ai-plugin.json
+  status: 307
+  resolves_to: https://www.commure.com/
+  document: false
+- path: /llms.txt
+  status: 307
+  resolves_to: https://www.commure.com/
+  document: false
+- path: /openapi.json
+  status: 307
+  resolves_to: https://www.commure.com/
+  document: false
+secondary_host: https://listrunner.health
+secondary_result: >-
+  All paths return HTTP 526 (Cloudflare invalid origin SSL certificate); the apex 301s to
+  listrunnerapp.com. No documents served.
