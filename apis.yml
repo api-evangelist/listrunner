@@ -16,6 +16,9 @@ description: >-
   the API Evangelist network as a historical health-tech identity record and a pointer to its
   successor surface at Commure/Athelas, not as an API provider.
 url: https://raw.githubusercontent.com/api-evangelist/listrunner/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Listrunner never published a public API, developer portal, SDK, or package; it is retained in the API Evangelist network as a historical health-tech identity record and a pointer to its successor surf"
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
