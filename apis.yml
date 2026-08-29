@@ -30,6 +30,17 @@ x-successor: commure
 x-successor-url: https://www.commure.com/
 x-network-successor: athelas
 x-archived-website: http://web.archive.org/web/20210604111215/https://www.listrunnerapp.com/
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
