@@ -64,23 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Listrunner was a HIPAA-compliant clinical collaboration platform for hospital care teams — shared,
-living patient lists covering sign-out/handoff, rounding, discharge coordination, and task
-assignment, with EHR integration, audit logs, and an offline mode across web, iOS, and Android.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**Status: defunct.** Listrunner no longer operates as an independent product. Its brand domains
-redirect to Commure, the healthcare-infrastructure company that merged with Athelas:
+Listrunner was a HIPAA-compliant clinical collaboration platform that let hospital care teams build and share living patient lists. Marketed as "a collaboration platform for clinicians," it targeted specialty practices, residency programs, hospital departments, and outpatient teams with shared sign-out/handoff lists, faster rounding, coordinated discharge tracking, task assignment, real-time lab and clinical data access, EHR integration, printable rounding lists, fully customizable per-team list fields, administrator-controlled user permissions and data access, audit logs and reporting, and a robust offline mode across web plus native iOS and Android apps. Listrunner no longer operates as an independent product: its brand domains listrunner.health and listrunnerapp.com are now served from Cloudflare and redirect (301 then 307) to commure.com, the healthcare-infrastructure company that merged with Athelas. The last archived standalone Listrunner homepage is from 2021-06-04. Listrunner never published a public API, developer portal, SDK, or package; it is retained in the API Evangelist network as a historical health-tech identity record and a pointer to its successor surface at Commure/Athelas, not as an API provider.
 
-- `listrunner.health` → 301 → `listrunnerapp.com` → 307 → `commure.com` (probed 2026-07-19)
-- Last archived standalone Listrunner homepage: 2021-06-04
-- `listrunner.com` is an unrelated parked GoDaddy for-sale domain
+**Areas:** Company · Health · Healthcare · Clinical Collaboration · Care Coordination · Patient Lists · Clinical Handoff · HIPAA · Mobile · Defunct
 
-**No API surface.** Listrunner never published a public API, developer portal, API reference,
-SDK, CLI, or package. Probes found nothing on npm, PyPI, or GitHub, no `.well-known` documents,
-and no developer paths across 361 archived URLs. This repo is retained as a historical health-tech
-identity record and a pointer to the successor surface, not as an API provider.
+## Listrunner on APIs.io (historical record)
 
-Successor in this network: [`all/athelas`](../athelas/) (Athelas / Commure), which carries the
-real FHIR and RPM API artifacts.
+Everything profiled for Listrunner is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/listrunner/](https://apis.io/providers/listrunner/)** — or go straight to one of the APIs or properties below.
 
-Backed by: creandum
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Listrunner Domain Security](https://apis.io/security/listrunner/listrunner-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://listrunnerapp.com/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Listrunner: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/listrunner/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
